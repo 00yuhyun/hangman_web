@@ -17,12 +17,12 @@ jobs:
     - name: docker login
       env:
         DOCKER_USER: ${yuhyun00}
-        DOCKER_PASSWORD: ${angks1ehwjs!}
+        DOCKER_PASSWORD: ${qwer1234}
       run: |
-        docker login -u yuhyun00 -p angks1ehwjs!
+        docker login -u yuhyun00 -p qwer1234
     - name: Build the Docker image
       run: docker build --tag ${yuhyun00}/hangman:latest .
     - name: docker push
-      run: docker push ${angks1ehwjs!}/hangman:latest
+      run: docker push ${qwer1234}/hangman:latest
 
 
